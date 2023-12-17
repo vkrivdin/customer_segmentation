@@ -1,2 +1,2 @@
-# customer_segmentation
+# Customer segmentation dashboard
 Customer segmentation dashboard project
