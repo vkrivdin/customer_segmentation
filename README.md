@@ -1,3 +1,5 @@
+# Customer segmentation
+
 # Description
 
 This is BI dashboard project aimed to present one of my real work projects for a client
@@ -80,3 +82,8 @@ As you can see the business case is a bit challenging as we need to deal with se
 ## Data security
 
 - There must be possibility to restrict access of single user to a country or set of countries
+
+# Credits
+
+- DAX Pattern for dynamic customer segmentation - https://www.daxpatterns.com/dynamic-segmentation/
+- Bravo for Power BI - used for DAX Autocalendar and Time intelligence measures - https://www.sqlbi.com/tools/bravo-for-power-bi/
