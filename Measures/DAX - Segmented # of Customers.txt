@@ -1,0 +1,28 @@
+# of Customers = 
+VAR CustomersInSegment =
+    -- Gets the customers in current segment
+    FILTER (
+        ALLSELECTED ( Dim_Customer[Customer ID] ),
+        VAR SalesOfCustomer = [VAR - Segmentation amount] -- Computes Sales Amount for one customer as a value to check against thresholds
+        VAR SegmentForCustomer =
+            -- Retrieves the segment
+            FILTER (
+                -- a customer belongs to
+                'Customer sales revenue segments',
+                NOT ISBLANK ( SalesOfCustomer )
+                    && 'Customer sales revenue segments'[Min Sales] < SalesOfCustomer
+                    && 'Customer sales revenue segments'[Max Sales] >= SalesOfCustomer
+            )
+        VAR IsCustomerInSegments =
+            NOT ISEMPTY ( SegmentForCustomer )
+        RETURN
+            IsCustomerInSegments
+    )
+VAR Result =
+    CALCULATE (
+        [# of Customers - Base],
+        -- Expression to compute
+        KEEPFILTERS ( CustomersInSegment ) -- Applies filter for segmented customers 
+    )
+RETURN
+    Result

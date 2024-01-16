@@ -1,0 +1,2 @@
+# of Customers - Base = 
+COUNTROWS ( SUMMARIZE ( Fact_Orders, Dim_Customer[Customer ID] ) )
