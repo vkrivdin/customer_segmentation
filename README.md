@@ -24,24 +24,24 @@ There are problems though that slow down or sometimes prevent some of the decisi
 
 Main goal:
 
-- Provide analytical tool that is always accessible for CEO and General Managers in the company and helps them see and understand current customer situation at level of details enough for managing an international company operating in multiple geographical regions so that they can spend less time on agreeing on data and make more effective decisions
+- Provide an analytical tool that is always accessible to the CEO and General Managers in the company and helps them see and understand the current situation with the customer base at a level of detail enough for managing an international company operating in multiple geographical regions so that they can spend less time agreeing on data and make more effective decisions
 
 Sub-goals:
 
 - Help CEO and General Managers continue to hold regular monthly discussions about customer situation
-- Provide ability to see where (in which region, in which business line) the amount of customers is growing or falling down
-- Provide a view at situation with customers at a whole company level, region level and country level
-- Suggest a universal customer segmentation methodology that audience will easily understand and may potentially agree to use
-- Utilize the same methodology for ways to calculate amount of customers and segments into which they can be separated
+- Provide the ability to see where (in which region, in which business line) the amount of customers is growing or falling down
+- Provide a view of the situation with customers at a whole company level, region level, and country level
+- Suggest a universal customer segmentation methodology that the audience will easily understand and may potentially agree to use
+- Utilize the same methodology for ways to calculate the amount of customers and segments into which they can be separated
 - Suggest visualizations that can help achieve the business goals
 
-# Approach to development process
+# Approach to the development process
 
 As you can see the business case is a bit challenging as we need to deal with several aspects
 
 - Top management audience
-    - Need to be careful with suggesting the dashboard and not to overload it with information.
-    - Everything must be crystal clear and should pass the “5 second” rule
+    - We need to be careful with suggesting the dashboard and not overloading it with information.
+    - Everything must be crystal clear and should pass the “5-second” rule
 - User preference to tell “their own” data story
     - We might face active resistance or indifference to our offer
 - The process works somehow already today
@@ -56,6 +56,7 @@ As you can see the business case is a bit challenging as we need to deal with se
 
 - User can see “at a glance” view that is used primarily used in the call between CEO and GMs
 - User can see obvious visualizations with details by by time, by geography, by business line
+- User ideally does not want to spend any time on setting up the filters to see the right data
 
 ## Business case specifics
 
@@ -78,6 +79,19 @@ As you can see the business case is a bit challenging as we need to deal with se
     3. middle - from $1k to $2k
     4. low - from $0.5k to $1k
     5. lowest - below $0.5k
+
+## Technical solutions
+
+### Color choice
+
+Color palette
+
+- https://www.color-hex.com/color-palette/107693
+
+Two main colors
+
+- Good - [#728c80](https://www.color-hex.com/color/728c80)[](https://www.color-hex.com/color/61786e)
+- Bad - [#875457](https://www.color-hex.com/color/875457)
 
 ## Data security
 
