@@ -24,7 +24,7 @@ There are problems though that slow down or sometimes prevent some of the decisi
 
 ## Main goal
 
-- Provide an analytical tool that is always accessible to the CEO and General Managers in the company and helps them see and understand the current situation with the customer base at a level of detail enough for managing an international company operating in multiple geographical regions so that they can spend less time agreeing on data and make more effective decisions
+- Provide an analytical tool that is always accessible to the CEO and General Managers in the company and helps them see and understand the current situation with the customer base at a level of detail enough for managing a national company operating in multiple geographical regions so that they can spend less time agreeing on data and make more effective decisions
 
 ## Sub-goals
 
@@ -62,16 +62,23 @@ As you can see, the business case is a bit challenging as we need to deal with s
 ### Metrics
 
 1. Count of Customers in a selected period
-2. Amount of Sales Revenue in a selected period
-3. Count of Customers in each customer segment in a selected period
+2. Customer churn in a selected period
+3. Amount of Sales Revenue in a selected period
+
+### Dimensions
+
+1. Time period - year, quarter, month
+2. Geography - country, region, state, city
+3. Product - group, sub-group, product name
+4. Sales revenue segment - segment name
 
 ### Customer segmentation methodology
 
-- Due to customer expected cycle of next consecutive purchase the 12 months window is chosen to find and assess their activity
+- Due to customer expected cycle of next consecutive purchase, the 12 months window is chosen to find and assess their activity
 - If the customer did not perform a purchase over last 12 months they are considered as “lost”. Otherwise, the customer is “active”
 - Each customer Sales Revenue over last 12 months is used as a variable that defines a segment where they fall into
 - The 12 months value is calculated for each selected period dynamically
-    - If I am looking at January 2024 then the 12 months are December 2022
+    - If I am looking at January 2024, then the last 12 months are from February 2023 to January 2024
 - 5 customer segments are set to label them accordingly:
     1. highest - $3k and more
     2. high - from $2k to $3k
