@@ -8,7 +8,7 @@ This is BI dashboard project aimed to present one of my real work projects for a
 
 The company needs an instrument that could help start making decisions about customer retention and customer acquisition centrally based on data that everyone could agree on and everyone could use in conversations that happen at the top management level
 
-The process of customer discussion already exists 
+The process of customer discussion already exists and looks as follows:
 
 - CEO meets with each region General Manager (GM) and inquires them about current situation with the customer base
 - Every GM presents a story in a form that suits them best
@@ -22,22 +22,21 @@ There are problems though that slow down or sometimes prevent some of the decisi
 
 # Project goals
 
-Main goal:
+## Main goal
 
 - Provide an analytical tool that is always accessible to the CEO and General Managers in the company and helps them see and understand the current situation with the customer base at a level of detail enough for managing an international company operating in multiple geographical regions so that they can spend less time agreeing on data and make more effective decisions
 
-Sub-goals:
+## Sub-goals
 
 - Help CEO and General Managers continue to hold regular monthly discussions about customer situation
-- Provide the ability to see where (in which region, in which business line) the amount of customers is growing or falling down
+- Suggest a universal customer segmentation methodology (who are top customers, etc.) that the audience will easily understand and may potentially agree to use
+- Utilize the same methodology for ways to calculate the amount of customers and segments into which they can be separated at each company level
 - Provide a view of the situation with customers at a whole company level, region level, and country level
-- Suggest a universal customer segmentation methodology that the audience will easily understand and may potentially agree to use
-- Utilize the same methodology for ways to calculate the amount of customers and segments into which they can be separated
-- Suggest visualizations that can help achieve the business goals
+- Suggest other visualizations that can help achieve the business goals
 
 # Approach to the development process
 
-As you can see the business case is a bit challenging as we need to deal with several aspects
+As you can see, the business case is a bit challenging as we need to deal with several aspects
 
 - Top management audience
     - We need to be careful with suggesting the dashboard and not overloading it with information.
@@ -58,7 +57,7 @@ As you can see the business case is a bit challenging as we need to deal with se
 - User can see obvious visualizations with details by by time, by geography, by business line
 - User ideally does not want to spend any time on setting up the filters to see the right data
 
-## Business case specifics
+## Business logic specifics
 
 ### Metrics
 
@@ -80,7 +79,9 @@ As you can see the business case is a bit challenging as we need to deal with se
     4. low - from $0.5k to $1k
     5. lowest - below $0.5k
 
-## Technical solutions
+## Technical solution
+
+
 
 ### Color choice
 
@@ -96,6 +97,11 @@ Two main colors
 ## Data security
 
 - There must be possibility to restrict access of single user to a country or set of countries
+
+# Data source
+
+As real customer data could not be used, the Superstore sample data was used
+- https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
 
 # Credits
 
